@@ -1,4 +1,0 @@
-C:\projects\EFContextRepo\EntityFrameworkCore.Repository\EntityFrameworkCore.Repository\bin\Debug\netstandard2.0\EntityFrameworkCore.Repository.deps.json
-C:\projects\EFContextRepo\EntityFrameworkCore.Repository\EntityFrameworkCore.Repository\bin\Debug\netstandard2.0\EntityFrameworkCore.Repository.dll
-C:\projects\EFContextRepo\EntityFrameworkCore.Repository\EntityFrameworkCore.Repository\obj\Debug\netstandard2.0\EntityFrameworkCore.Repository.AssemblyInfoInputs.cache
-C:\projects\EFContextRepo\EntityFrameworkCore.Repository\EntityFrameworkCore.Repository\obj\Debug\netstandard2.0\EntityFrameworkCore.Repository.AssemblyInfo.cs
