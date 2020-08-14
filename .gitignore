@@ -3,3 +3,6 @@
 ################################################################################
 
 /EntityFrameworkCore.Repository/.vs/EntityFrameworkCore.Repository/v16
+/EntityFrameworkCore.Repository/EntityFrameworkCore.Repository/bin/Debug/netstandard2.0
+/EntityFrameworkCore.Repository/EntityFrameworkCore.Repository/obj
+*.user
