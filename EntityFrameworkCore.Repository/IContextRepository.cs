@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EntityFrameworkCore.Repository
 {
-    public interface IRepoContext<TContext> where TContext: DbContext
+    public interface IContextRepository<TRelation>
     {
-        IRepoContext<TContext> Include<T, T2>(Expression<Func<T, T2>> path) where T : class;
+        IContextRepository<TRelation> Include<T, T2>(Expression<Func<T, T2>> path) where T : class;
         Task<bool> IsAny<T>(Expression<Func<T, bool>> predicate) where T : class;
         Task<T> GetFirst<T>(Expression<Func<T, bool>> predicate) where T : class;
         Task<IEnumerable<T>> GetWhere<T>(Expression<Func<T, bool>> predicate) where T : class;

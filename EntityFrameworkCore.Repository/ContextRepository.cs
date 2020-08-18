@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace EntityFrameworkCore.Repository
 {
-    public class RepoContext<TContext> : IRepoContext<TContext> where TContext: DbContext
+    public class ContextRepository<TRelation, TContext> : IContextRepository<TRelation> where TContext: DbContext
     {
-        private readonly DbContext _context;
+        private readonly TContext _context;
         private IList<KeyValuePair<Type, LambdaExpression>> _includes = new List<KeyValuePair<Type, LambdaExpression>>();
 
-        public RepoContext(TContext context)
+        public ContextRepository(TContext context)
         {
                 _context = context;
         }        
 
-        public IRepoContext<TContext> Include<T, T2>(Expression<Func<T, T2>> path) where T : class
+        public IContextRepository<TRelation> Include<T, T2>(Expression<Func<T, T2>> path) where T : class
         {
             _includes.Add(new KeyValuePair<Type, LambdaExpression>(typeof(T), path));
 
